@@ -3,13 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metal Plant Stand | Devika Technofab</title>
+    <title>Designer Metal Plant Stand | Devika Technofab</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <style>
+        .product-page {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 60px auto;
+            gap: 40px;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-details {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-details h1 {
+            color: #0a1e47;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-price del {
+            color: #888;
+            margin-left: 5px;
+        }
+
+        .product-price span {
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        .product-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .product-features li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .product-features li::before {
+            content: "✅ ";
+            color: #388e3c;
+        }
+
+        .enquiry-btn {
+            display: inline-block;
+            background-color: #1b5e20;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .enquiry-btn:hover {
+            background-color: #145a24;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0a1e47;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-details {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ======= Navigation ======= -->
+<!-- ======= Navigation ======= -->
   <nav>
     <div class="logo">Devika Technofab</div>
     <div>
@@ -19,58 +121,34 @@
     </div>
   </nav>
 
-    <!-- Product Section -->
-    <section class="product-detail">
+<main>
+    <div class="product-page">
         <div class="product-image">
-            <img src="images/plant-stand.jpg" alt="Metal Plant Stand">
+            <img src="images/plant-stand.jpg" alt="Designer Metal Plant Stand">
         </div>
 
-        <div class="product-info">
-            <h2>Devika™ Designer Metal Plant Stand</h2>
-            <p class="price">₹2,499 <span class="old-price">₹3,299</span> <span class="discount">(25% OFF)</span></p>
-
-            <ul class="features">
-                <li>✅ Premium powder-coated metal for rust-free durability</li>
-                <li>✅ Available in elegant White and Matte Black finishes</li>
-                <li>✅ Supports up to 6 medium-sized plant pots</li>
-                <li>✅ Sturdy and lightweight — ideal for indoor & outdoor use</li>
-                <li>✅ Adds a modern touch to your living space</li>
-            </ul>
-
-            <div class="variants">
-                <p><strong>Available Colors:</strong></p>
-                <button class="variant-btn white">White</button>
-                <button class="variant-btn black">Black</button>
+        <div class="product-details">
+            <h1>Designer Metal Plant Stand (Set of 2)</h1>
+            <div class="product-price">
+                ₹1,999 <del>₹3,499</del> <span>(Rs. 1,500 OFF)</span>
             </div>
-
-            <a href="mailto:devikatechnofab@gmail.com?subject=Enquiry%20for%20Sanitary%20Vending%20Machine" class="btn">Enquiry</a>
+            <ul class="product-features">
+                <li>Crafted from high-quality mild steel</li>
+                <li>Rust-resistant coating for long-lasting durability</li>
+                <li>Modern minimalist design fits any decor</li>
+                <li>Ideal for indoor and outdoor use</li>
+                <li>Supports up to 25 kg weight</li>
+            </ul>
+            <a href="contact.html" class="enquiry-btn">Enquire Now</a>
+            <br>
+            <a href="products.html" class="back-link">← Back to Products</a>
         </div>
-    </section>
+    </div>
+</main>
 
-    <!-- Description -->
-    <section class="description">
-        <h3>Description</h3>
-        <p>
-            The Devika™ Designer Metal Plant Stand is built for modern homes that value aesthetics and durability.
-            Crafted from high-quality iron with a smooth powder-coated finish, it enhances your space while securely 
-            holding multiple plants.
-        </p>
-        <p>
-            Its minimalistic design and dual color variants make it perfect for both indoor and balcony setups. 
-            Whether you’re decorating a home, café, or office — it fits beautifully anywhere.
-        </p>
-    </section>
-
-    <!-- Category Info -->
-    <section class="category-info">
-        <p><strong>Category:</strong> Home Essentials</p>
-        <p><strong>Tag:</strong> Metal Plant Stand, Decor, Indoor Gardening</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Devika Technofab | Bhosari, Pune | devikatechnofab@gmail.com</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Devika Technofab | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>

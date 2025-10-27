@@ -3,13 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanitary Pad Incinerator | Devika Technofab</title>
+    <title>StayClean™ Sanitary Pad Incinerator | Devika Technofab</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <style>
+        .product-page {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 60px auto;
+            gap: 40px;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-details {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-details h1 {
+            color: #0a1e47;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-price del {
+            color: #888;
+            margin-left: 5px;
+        }
+
+        .product-price span {
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        .product-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .product-features li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .product-features li::before {
+            content: "✅ ";
+            color: #388e3c;
+        }
+
+        .enquiry-btn {
+            display: inline-block;
+            background-color: #1b5e20;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .enquiry-btn:hover {
+            background-color: #145a24;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0a1e47;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-details {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ======= Navigation ======= -->
+<!-- ======= Navigation ======= -->
   <nav>
     <div class="logo">Devika Technofab</div>
     <div>
@@ -19,51 +121,34 @@
     </div>
   </nav>
 
-    <!-- Product Section -->
-    <section class="product-detail">
+<main>
+    <div class="product-page">
         <div class="product-image">
-            <img src="images/incinerator.jpg" alt="Sanitary Pad Incinerator">
+            <img src="images/incinerator.jpg" alt="StayClean Sanitary Pad Incinerator">
         </div>
 
-        <div class="product-info">
-            <h2>StayClean™ Automatic Sanitary Pad Incinerator</h2>
-            <p class="price">₹14,499 <span class="old-price">₹17,999</span> <span class="discount">(20% OFF)</span></p>
-
-            <ul class="features">
-                <li>✅ Eco-friendly and smokeless incineration technology</li>
-                <li>✅ Completely odor-free and safe operation</li>
-                <li>✅ Burns sanitary pads to sterile ash in minutes</li>
-                <li>✅ Low maintenance and power-efficient</li>
-                <li>✅ Ideal for schools, hospitals, offices, and public places</li>
+        <div class="product-details">
+            <h1>StayClean™ Sanitary Pad Incinerator</h1>
+            <div class="product-price">
+                ₹13,499 <del>₹16,999</del> <span>(21% OFF)</span>
+            </div>
+            <ul class="product-features">
+                <li>Eco-friendly disposal of used sanitary pads</li>
+                <li>Complete ash formation with no visible residue</li>
+                <li>Wall-mounted, compact, and safe design</li>
+                <li>Consumes less than 1 unit of electricity per cycle</li>
+                <li>Ideal for schools, hospitals, offices & washrooms</li>
             </ul>
-
-            <a href="mailto:devikatechnofab@gmail.com?subject=Enquiry%20for%20Sanitary%20Vending%20Machine" class="btn">Enquiry</a>
+            <a href="contact.html" class="enquiry-btn">Enquire Now</a>
+            <br>
+            <a href="products.html" class="back-link">← Back to Products</a>
         </div>
-    </section>
+    </div>
+</main>
 
-    <!-- Description -->
-    <section class="description">
-        <h3>Description</h3>
-        <p>
-            The StayClean™ Sanitary Pad Incinerator is an eco-conscious disposal unit designed for safe and hygienic 
-            burning of used sanitary napkins. It ensures complete destruction without smoke or odor, producing minimal ash residue.
-        </p>
-        <p>
-            Built using advanced heating technology, this incinerator guarantees reliability and easy maintenance, 
-            making it the perfect solution for schools, hospitals, and workplaces striving to maintain hygienic standards.
-        </p>
-    </section>
-
-    <!-- Category Info -->
-    <section class="category-info">
-        <p><strong>Category:</strong> Sanitary Solutions</p>
-        <p><strong>Tag:</strong> StayClean, Incinerator, Hygiene, Eco-friendly</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Devika Technofab | Bhosari, Pune | devikatechnofab@gmail.com</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Devika Technofab | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
