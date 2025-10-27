@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | Devika Technofab</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="logo.png" alt="Devika Technofab Logo">
-        <span>Devika Technofab</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="contact">
-    <h2>Get in Touch</h2>
-    <p><strong>Email:</strong> <a href="mailto:devikatechnofab@gmail.com">devikatechnofab@gmail.com</a></p>
-    <p><strong>Location:</strong> Bhosari, Pune, Maharashtra</p>
-    <p>We’ll be happy to assist you with your product or customization queries.</p>
+<body>
+
+  <!-- ======= Navigation ======= -->
+  <nav>
+    <div class="logo">Devika Technofab</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ======= Contact Header ======= -->
+  <section class="hero">
+    <h1>Contact Devika Technofab</h1>
+    <p>We’d love to hear from you. Whether you’re looking for product details or partnership opportunities — reach out anytime.</p>
   </section>
 
+  <!-- ======= Contact Info ======= -->
+  <section>
+    <h2>Get in Touch</h2>
+    <p><strong>Location:</strong> Bhosari, Pune, Maharashtra</p>
+    <p><strong>Email:</strong> <a href="mailto:devikatechnofab@gmail.com">devikatechnofab@gmail.com</a></p>
+  </section>
+
+  <!-- ======= Contact Form ======= -->
+  <section>
+    <h2>Send Us a Message</h2>
+    <form action="mailto:devikatechnofab@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ======= Footer ======= -->
   <footer>
-    <p>© 2025 Devika Technofab | Bhosari, Pune, Maharashtra</p>
+    © 2025 Devika Technofab | Bhosari, Pune, Maharashtra | devikatechnofab@gmail.com
   </footer>
+<script src="script.js"></script>
 </body>
 </html>
