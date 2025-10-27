@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Products | Devika Technofab</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Devika Technofab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
-
 <body>
 
-  <!-- ======= Navigation ======= -->
-  <nav>
-    <div class="logo">Devika Technofab</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </nav>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Devika Technofab Logo">
+            <h1>Devika Technofab</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-  <!-- ======= Products Section ======= -->
-  <section>
-    <h1>Our Products</h1>
-    <p>Explore our innovative range of sanitary and home essentials designed for a sustainable future.</p>
-  </section>
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2>Our Products</h2>
 
-  <!-- ======= Sanitary Essentials ======= -->
-  <section class="category">
-    <h2>Sanitary Essentials</h2>
-    <div class="product-grid">
+        <!-- Sanitary Essentials -->
+        <h3 class="category-title">Sanitary Essentials</h3>
+        <div class="product-grid">
 
-      <!-- Vending Machine -->
-      <div class="product-card">
-        <img src="images/vending.jpg" alt="Sanitary Vending Machine" />
-        <h3>Sanitary Vending Machine</h3>
-        <p>Automatic vending machine for sanitary pads with multi-coin acceptance. Designed for hygiene and ease of use.</p>
-        <a href="mailto:devikatechnofab@gmail.com?subject=Enquiry%20for%20Sanitary%20Vending%20Machine" class="btn">Enquiry</a>
-      </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <a href="vending-machine.html">
+                    <img src="images/vending-machine.jpg" alt="Sanitary Pad Vending Machine">
+                    <h4>StayClean™ Vending Machine</h4>
+                </a>
+                <p>Automatic sanitary pad vending unit.</p>
+                <button class="btn-secondary" onclick="window.location.href='mailto:devikatechnofab@gmail.com?subject=Enquiry: StayClean Vending Machine'">Enquire Now</button>
+            </div>
 
-      <!-- Incinerator -->
-      <div class="product-card">
-        <img src="images/incinerator.jpg" alt="Sanitary Incinerator" />
-        <h3>Sanitary Incinerator</h3>
-        <p>Eco-friendly and compact sanitary napkin disposal solution that ensures safe, smokeless incineration.</p>
-        <a href="mailto:devikatechnofab@gmail.com?subject=Enquiry%20for%20Sanitary%20Incinerator" class="btn">Enquiry</a>
-      </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <a href="incinerator.html">
+                    <img src="images/incinerator.jpg" alt="Sanitary Pad Incinerator">
+                    <h4>StayClean™ Incinerator</h4>
+                </a>
+                <p>Automatic pad disposal system with eco-safe burning.</p>
+                <button class="btn-secondary" onclick="window.location.href='mailto:devikatechnofab@gmail.com?subject=Enquiry: StayClean Incinerator'">Enquire Now</button>
+            </div>
 
-      <!-- Coming Soon -->
-      <div class="product-card coming-soon">
-        <h3>Coming Soon</h3>
-      </div>
+            <!-- Placeholder for future -->
+            <div class="product-card coming-soon">
+                <img src="images/placeholder.jpg" alt="Coming Soon">
+                <h4>Coming Soon</h4>
+                <p>New product launching soon...</p>
+                <button class="btn-disabled" disabled>Coming Soon</button>
+            </div>
+        </div>
 
-    </div>
-  </section>
+        <!-- Home Essentials -->
+        <h3 class="category-title">Home Essentials</h3>
+        <div class="product-grid">
 
-  <!-- ======= Home Essentials ======= -->
-  <section class="category">
-    <h2>Home Essentials</h2>
-    <div class="product-grid">
+            <!-- Product 3 -->
+            <div class="product-card">
+                <a href="plant-stand.html">
+                    <img src="images/plant-stand.jpg" alt="Metal Plant Stand">
+                    <h4>Designer Metal Plant Stand</h4>
+                </a>
+                <p>Premium iron stand for indoor and balcony décor.</p>
+                <button class="btn-secondary" onclick="window.location.href='mailto:devikatechnofab@gmail.com?subject=Enquiry: Metal Plant Stand'">Enquire Now</button>
+            </div>
 
-      <!-- Plant Stand -->
-      <div class="product-card">
-        <img src="images/plant stand.png" alt="Metal Plant Stand" />
-        <h3>Metal Plant Stand</h3>
-        <p>Elegant, durable, and corrosion-resistant plant stand crafted from premium materials for your home or garden.</p>
-        <a href="mailto:devikatechnofab@gmail.com?subject=Enquiry%20for%20Plant%20Stand" class="btn">Enquiry</a>
-      </div>
+            <!-- Placeholder -->
+            <div class="product-card coming-soon">
+                <img src="images/placeholder.jpg" alt="Coming Soon">
+                <h4>Coming Soon</h4>
+                <p>More home essential designs in progress...</p>
+                <button class="btn-disabled" disabled>Coming Soon</button>
+            </div>
 
-      <!-- Coming Soon -->
-      <div class="product-card coming-soon">
-        <h3>Coming Soon</h3>
-      </div>
+            <div class="product-card coming-soon">
+                <img src="images/placeholder.jpg" alt="Coming Soon">
+                <h4>Coming Soon</h4>
+                <p>More products launching soon...</p>
+                <button class="btn-disabled" disabled>Coming Soon</button>
+            </div>
+        </div>
+    </section>
 
-      <div class="product-card coming-soon">
-        <h3>Coming Soon</h3>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    © 2025 Devika Technofab | Bhosari, Pune, Maharashtra | devikatechnofab@gmail.com
-  </footer>
-<script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Devika Technofab | Bhosari, Pune | devikatechnofab@gmail.com</p>
+    </footer>
 
 </body>
 </html>
