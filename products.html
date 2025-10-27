@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products | Devika Technofab</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Devika Technofab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png">
 </head>
 <body>
 
-    <!-- ======= Navigation ======= -->
+  <!-- ======= Navigation ======= -->
   <nav>
     <div class="logo">Devika Technofab</div>
     <div>
@@ -19,78 +19,63 @@
     </div>
   </nav>
 
-    <!-- Products Section -->
-    <section class="products-section">
-        <h2>Our Products</h2>
+  <section class="products">
+    <h2>Our Products</h2>
 
-        <!-- Sanitary Essentials -->
-        <h3 class="category-title">Sanitary Essentials</h3>
-        <div class="product-grid">
-
-            <!-- Product 1 -->
-            <div class="product-card">
-                <a href="vending-machine.html">
-                    <img src="images/vending.jpg" alt="Sanitary Pad Vending Machine">
-                    <h4>StayClean™ Vending Machine</h4>
-                </a>
-                <p>Automatic sanitary pad vending unit.</p>
-                <button class="btn-secondary" onclick="window.location.href='mailto:devikatechnofab@gmail.com?subject=Enquiry: StayClean Vending Machine'">Enquire Now</button>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <a href="incinerator.html">
-                    <img src="images/incinerator.jpg" alt="Sanitary Pad Incinerator">
-                    <h4>StayClean™ Incinerator</h4>
-                </a>
-                <p>Automatic pad disposal system with eco-safe burning.</p>
-                <button class="btn-secondary" onclick="window.location.href='mailto:devikatechnofab@gmail.com?subject=Enquiry: StayClean Incinerator'">Enquire Now</button>
-            </div>
-
-            <!-- Placeholder for future -->
-            <div class="product-card coming-soon">
-                <img src="images/placeholder.jpg" alt="Coming Soon">
-                <h4>Coming Soon</h4>
-                <p>New product launching soon...</p>
-                <button class="btn-disabled" disabled>Coming Soon</button>
-            </div>
+    <!-- SANITARY ESSENTIALS -->
+    <section id="sanitary" class="product-section">
+      <h3>Sanitary Essentials</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/vending.jpg" alt="Vending Machine">
+          <h4>StayClean™ Sanitary Pad Vending Machine</h4>
+          <p>₹11,999 <span class="old-price">₹14,999</span> (20% OFF)</p>
+          <p>Automatic sanitary pad vending unit with coin operation for ₹1, ₹2 & ₹5 coins.</p>
+          <a href="vending-machine.html" class="btn">View Details</a>
         </div>
 
-        <!-- Home Essentials -->
-        <h3 class="category-title">Home Essentials</h3>
-        <div class="product-grid">
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <a href="plant-stand.html">
-                    <img src="images/plant-stand.png" alt="Metal Plant Stand">
-                    <h4>Designer Metal Plant Stand</h4>
-                </a>
-                <p>Premium iron stand for indoor and balcony décor.</p>
-                <button class="btn-secondary" onclick="window.location.href='mailto:devikatechnofab@gmail.com?subject=Enquiry: Metal Plant Stand'">Enquire Now</button>
-            </div>
-
-            <!-- Placeholder -->
-            <div class="product-card coming-soon">
-                <img src="images/placeholder.jpg" alt="Coming Soon">
-                <h4>Coming Soon</h4>
-                <p>More home essential designs in progress...</p>
-                <button class="btn-disabled" disabled>Coming Soon</button>
-            </div>
-
-            <div class="product-card coming-soon">
-                <img src="images/placeholder.jpg" alt="Coming Soon">
-                <h4>Coming Soon</h4>
-                <p>More products launching soon...</p>
-                <button class="btn-disabled" disabled>Coming Soon</button>
-            </div>
+        <div class="product-card">
+          <img src="images/incinerator.jpg" alt="Sanitary Incinerator">
+          <h4>StayClean™ Sanitary Incinerator</h4>
+          <p>₹18,499 <span class="old-price">₹21,999</span> (15% OFF)</p>
+          <p>Compact, eco-friendly incinerator for safe sanitary pad disposal with low smoke emission.</p>
+          <a href="incinerator.html" class="btn">View Details</a>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Devika Technofab | Bhosari, Pune | devikatechnofab@gmail.com</p>
-    </footer>
+    <!-- HOME ESSENTIALS -->
+    <section id="home" class="product-section">
+      <h3>Home Essentials</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/plant stand.png" alt="Metal Plant Stand">
+          <h4>Designer Metal Plant Stand</h4>
+          <p>₹3,499 <span class="old-price">₹4,499</span> (22% OFF)</p>
+          <p>Premium green powder-coated metal plant stand ideal for homes, offices & balconies.</p>
+          <a href="plant-stand.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Devika Technofab | Bhosari, Pune, Maharashtra | devikatechnofab@gmail.com</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
