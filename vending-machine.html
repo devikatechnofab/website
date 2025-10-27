@@ -3,68 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanitary Pad Vending Machine | Devika Technofab</title>
+    <title>StayClean™ Sanitary Pad Vending Machine | Devika Technofab</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <style>
+        .product-page {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 60px auto;
+            gap: 40px;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-details {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-details h1 {
+            color: #0a1e47;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-price del {
+            color: #888;
+            margin-left: 5px;
+        }
+
+        .product-price span {
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        .product-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .product-features li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .product-features li::before {
+            content: "✔️ ";
+            color: #388e3c;
+        }
+
+        .enquiry-btn {
+            display: inline-block;
+            background-color: #1b5e20;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .enquiry-btn:hover {
+            background-color: #145a24;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0a1e47;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-details {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ======= Navigation ======= -->
-  <nav>
-    <div class="logo">Devika Technofab</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact Us</a>
+<header>
+    <div class="nav-container">
+        <h2><a href="index.html">Devika Technofab</a></h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </div>
-  </nav>
+</header>
 
-    <!-- Product Section -->
-    <section class="product-detail">
+<main>
+    <div class="product-page">
         <div class="product-image">
-            <img src="images/vending.jpg" alt="Sanitary Pad Vending Machine">
+            <img src="images/vending.jpg" alt="StayClean Sanitary Pad Vending Machine">
         </div>
 
-        <div class="product-info">
-            <h2>StayClean™ Sanitary Pad Vending Machine</h2>
-            <p class="price">₹11,999 <span class="old-price">₹14,999</span> <span class="discount">(20% OFF)</span></p>
-
-            <ul class="features">
-                <li>✅ Dispenses sanitary pads automatically with coin operation</li>
-                <li>✅ Supports ₹1, ₹2, ₹5 coins</li>
-                <li>✅ 33-pad capacity variants</li>
-                <li>✅ Low power consumption</li>
-                <li>✅ Ideal for schools, hospitals & workplaces</li>
+        <div class="product-details">
+            <h1>StayClean™ Sanitary Pad Vending Machine</h1>
+            <div class="product-price">
+                ₹11,999 <del>₹14,999</del> <span>(20% OFF)</span>
+            </div>
+            <ul class="product-features">
+                <li>Dispenses sanitary pads automatically with coin operation</li>
+                <li>Supports ₹1, ₹2, ₹5 coins</li>
+                <li>Available in 33-pad and 50-pad variants</li>
+                <li>Low power consumption</li>
+                <li>Ideal for schools, hospitals & workplaces</li>
             </ul>
-
-            <a href="mailto:devikatechnofab@gmail.com?subject=Enquiry%20for%20Sanitary%20Vending%20Machine" class="btn">Enquiry</a>
+            <a href="contact.html" class="enquiry-btn">Enquire Now</a>
+            <br>
+            <a href="products.html" class="back-link">← Back to Products</a>
         </div>
-    </section>
+    </div>
+</main>
 
-    <!-- Description -->
-    <section class="description">
-        <h3>Description</h3>
-        <p>
-            The StayClean™ sanitary pad vending machine is a reliable, coin-operated dispenser designed for 
-            convenient and hygienic access to sanitary napkins. Engineered with durability and simplicity in mind, 
-            it ensures uninterrupted service in public restrooms, offices, schools, and hospitals.
-        </p>
-        <p>
-            Each machine undergoes quality testing for smooth operation and longevity. With a stainless-steel body and 
-            compact design, it blends seamlessly into any environment while promoting menstrual hygiene awareness.
-        </p>
-    </section>
-
-    <!-- Category Info -->
-    <section class="category-info">
-        <p><strong>Category:</strong> Sanitary Solutions</p>
-        <p><strong>Tag:</strong> StayClean, Vending Machine, Hygiene</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Devika Technofab | Bhosari, Pune | devikatechnofab@gmail.com</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Devika Technofab | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
