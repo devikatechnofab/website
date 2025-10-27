@@ -16,30 +16,49 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* Header / Navbar */
 .navbar {
-  background-color: #1a237e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #1a237e, #0d47a1);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
+  padding: 15px 60px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.navbar h1 {
+.navbar .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
   margin: 0;
-  font-size: 1.2rem;
+  padding: 0;
 }
 
-.navbar nav a {
-  color: #fff;
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar a {
   text-decoration: none;
-  margin-left: 1rem;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.navbar nav a:hover {
-  text-decoration: underline;
+.navbar a:hover {
+  color: #ffeb3b;
 }
+
 
 /* Hero Section */
 .hero {
